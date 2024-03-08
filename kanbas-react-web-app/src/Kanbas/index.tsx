@@ -7,7 +7,22 @@ function Kanbas() {
  return (
    <div>
      <Nav/>
-     <h1>Kanbas</h1>
+     <div className="d-block d-md-none">
+      <nav
+        className="navbar bg-dark border-bottom border-body"
+        data-bs-theme="dark"
+      >
+        <div className="container-fluid">
+          <button
+            className="navbar-toggler"
+            type="button"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <a className="navbar-brand" href="#">Navbar</a>
+        </div>
+      </nav>
+    </div>
      <div className="d-flex">
       
       <div><KanbasNavigation/></div>

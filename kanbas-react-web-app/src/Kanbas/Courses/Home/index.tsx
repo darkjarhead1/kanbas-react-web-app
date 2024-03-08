@@ -5,7 +5,7 @@ function Home() {
   return (
     <div className="d-flex">
       <ModuleList />
-    <div className="float-end">
+    <div className="float-end d-none d-md-block">
       <h4>Course Status</h4>
     <button>Import Existing Content</button>
     <br />
