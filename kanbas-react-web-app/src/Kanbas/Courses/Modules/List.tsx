@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./index.css";
-import { modules } from "../../Database";
 import { FaEllipsisV, FaCheckCircle, FaMinusCircle, FaPencilAlt } from "react-icons/fa";
 import { useParams } from "react-router";
 import { useSelector, useDispatch } from "react-redux";
@@ -20,8 +19,7 @@ function ModuleList() {
     state.modulesReducer.module);
   const dispatch = useDispatch();
   return (
-    <div>
-    <>
+    <div style={{flexGrow: 1}}>
       <button className="btn btn-primary">Collapse All</button>
     <button className="btn btn-warning">View Progress</button>
     <select>
@@ -46,7 +44,7 @@ function ModuleList() {
         </div>
         <div className="d-flex">
         <div style={{paddingRight: "10px"}}>
-        <button className="btn btn-success" onClick={{ ...module, course: courseId }}><div style={{color: "black"}}>Add</div></button>
+        <button className="btn btn-success" onClick={() => dispatch(addModule({ ...module, course: courseId }))}><div style={{color: "black"}}>Add</div></button>
         </div>
         <button className="btn btn-warning" onClick={() => dispatch(updateModule(module))}>Update</button>
         </div>
@@ -82,7 +80,6 @@ function ModuleList() {
           </li>
         ))}
       </ul>
-    </>
     </div>
   );
 }

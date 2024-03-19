@@ -75,9 +75,9 @@ function Dashboard() {
                       }}>
                       Delete
                   </button>
-                  <p className="card-text">{course.name}</p>
-                  <Link to={`/Kanbas/Courses/${course._id}/Home`} className="btn btn-primary">
-                    Go </Link>
+                  <p className="card-text">{course.number} <br/> 
+                  Start Date: {course.startDate} <br/>
+                  End Date: {course.endDate}</p>
                 </div>
               </div>
             </div>

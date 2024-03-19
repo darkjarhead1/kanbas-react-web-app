@@ -24,8 +24,7 @@ function Courses() {
       <div className="d-flex">
       <CourseNavigation />
         <div
-          className=""
-          style={{ left: "320px", top: "50px" }} >
+          style={{ left: "320px", top: "50px", flexGrow: 1 }} >
           <Routes>
             <Route path="/" element={<Navigate to="Home" />} />
             <Route path="Home" element={<Home/>} />

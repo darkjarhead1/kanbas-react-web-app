@@ -3,9 +3,9 @@ import ModuleList from "../Modules/List";
 
 function Home() {
   return (
-    <div className="d-flex">
+    <div className="" style={{display: "flex"}}>
       <ModuleList />
-    <div className="float-end d-none d-md-block">
+    <div className="float-end d-none d-md-block" style={{width: "200px"}}>
       <h4>Course Status</h4>
     <button>Import Existing Content</button>
     <br />
